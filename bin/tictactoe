@@ -24,18 +24,5 @@ def start
       puts "Invalid entry."
       start
   end
-
-  def restart
-    puts "Please enter yes or no"
-    var = gets.strip
-  case var
-    when "yes"
-      start
-    when "no"
-      puts "Thanks for playing!"
-    else
-      restart
-  end
-end
 end
 start
