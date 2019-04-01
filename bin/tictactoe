@@ -10,7 +10,7 @@ def start
   case var
     when "0"
       game = Game.new(Player::Computer.new("X"), Player::Computer.new("O"))
-      game.play      
+      game.play
       puts "Play again?"
       restart
     when "1"
