@@ -9,7 +9,8 @@ def start
   var = gets.strip
   case var
     when "0"
-      Game.new(Player::Computer.new("X"), Player::Computer.new("O")).play
+      game = Game.new(Player::Computer.new("X"), Player::Computer.new("O"))
+      game.play      
       puts "Play again?"
       restart
     when "1"
