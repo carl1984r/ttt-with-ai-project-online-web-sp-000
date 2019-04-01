@@ -10,7 +10,7 @@ def start
   case var
     when "0"
       Game.new(Players::Computer.new("X"), Players::Computer.new("O")).play
-      puts "Play again?"
+      puts "Play again!  ctrl + c to exit"
       start
     when "1"
       Game.new(Players::Human.new("X"), Players::Computer.new("O")).play
